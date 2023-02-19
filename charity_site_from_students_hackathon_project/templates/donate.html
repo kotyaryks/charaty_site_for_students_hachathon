@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content%}
+<div class="container">
+    <h1>
+        ЯК ВИ ХОЧЕТЕ ДОПОМОГТИ?
+    </h1>
+
+    <div class="group">
+        <a class="btn-large" href="https://secure.wayforpay.com/donate/d47368e1a7d0e">Допомогти грошима</a>
+        <button class="btn-large-reverse open-popup">Допомогти ресурсами</button>
+    </div>
+
+</div>
+<! --------------------POP UP---------------->
+
+<div class="popup-bg">
+    <div class="popup">
+        <img class="close-popup" src="../static/assets/close.svg" alt="close">
+        <form>
+            <h4>Заповніть форму, щоб ми зв’язалися з вами</h4>
+            <div class="popup-container">
+                <ul>
+                    <li>
+                        <input id="first_name" name="name" type="text" placeholder="Ім'я" required="">
+                    </li>
+                    <li>
+                        <input id="last_name" name="name" type="text" placeholder="Прізвище" required="">
+                    </li>
+                    <li>
+                        <input id="email" name="email" type="email" placeholder="example@domain.com" required="">
+                    </li>
+                    <li>
+                        <input id="phone" name="phone" type="tel" placeholder="+380000000000" required="">
+                    </li>
+                </ul>
+                <textarea id="textarea">Чим можу допомогти</textarea>
+            </div>
+            <input value="Надіслати" type="submit">
+        </form>
+    </div>
+</div>
+
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/main.js"></script>
+
+{% endblock content%}
+
+<! --------------------POP UP---------------->
+

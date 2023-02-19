@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+
+    {% for shelter in shelter_list %}
+    <div class="shelter-info">
+        <h1>
+            {{shelter.name}}
+        </h1>
+        <div class="person1">
+            <img src="{{shelter.photo.url}}" alt="" class="person_photo1">
+
+            <div class="description1">
+                {{shelter.description}}<br>
+                {{shelter.phone_number}}<br>
+                <a href="{{shelter.url}}"><i>{{shelter.url}}<i></a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+

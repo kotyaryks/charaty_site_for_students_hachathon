@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="blog">
+        {% for post in post_list %}
+        <iframe class="post" src="{{post}}embed" width="400" height="500"
+                frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+/venv/
+
+/migrations/*
+!migrations/__init__.py
+
+/charity_site_from_students_hackathon_project/.idea/
+
+db.sqlite3
+
+/media/*

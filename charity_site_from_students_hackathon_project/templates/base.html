@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="menu-box">
+            <a href="{% url 'home' %}">
+                            <img src="{% static 'assets/logo.svg' %}" alt="" class="logo">
+            </a>
+            <nav class="nav">
+                <a class="nav__link" href="{% url 'shelters' %}">Прихистки</a>
+                <a class="nav__link" href="{% url 'projects' %}">Проєкти</a>
+                <a class="nav__link" href="{% url 'blog' %}">Блог</a>
+                <a class="nav__link" href="{% url 'team' %}">Команда</a>
+                <a class="nav__link" href="{% url 'reports' %}">Звіти</a>
+            </nav>
+            <a class="button" href="{% url 'home' %}">Допомогти</a>
+        </div>
+    </div>
+</header>
+
+    {% block content%}
+    {% endblock content%}
+
+<footer>
+    <p>Пацюки для STUDENTS HACKATHON</p>
+    <p> 2023 </p>
+</footer>
+
+
+</body>
+</html>
